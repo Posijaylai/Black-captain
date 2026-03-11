@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BlackJay's Game Center - Mom is Coming! Game</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ffd700",
+                        "deep-blue": "#1e3a5f",
+                        "accent-gold": "#ffd700",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"],
+                        "playful": ["Fredoka", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes bounce-gentle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes pulse-gold {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(0.98); }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 3s linear infinite;
+        }
+        .animate-bounce-gentle {
+            animation: bounce-gentle 2s ease-in-out infinite;
+        }
+        .animate-pulse-gold {
+            animation: pulse-gold 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-display bg-deep-blue text-white overflow-hidden">
+<div class="fixed inset-0 flex flex-col items-center justify-center p-6 z-[100] overflow-y-auto">
+<!-- Decorative background elements -->
+<div class="absolute top-10 left-10 opacity-20 animate-bounce-gentle">
+<span class="material-symbols-outlined text-accent-gold text-6xl">videogame_asset</span>
+</div>
+<div class="absolute bottom-20 right-20 opacity-20 animate-bounce-gentle" style="animation-delay: 0.5s">
+<span class="material-symbols-outlined text-accent-gold text-7xl">visibility_off</span>
+</div>
+<div class="absolute top-1/4 right-10 opacity-10">
+<span class="material-symbols-outlined text-white text-9xl">joystick</span>
+</div>
+
+<!-- Main Content Container -->
+<div class="relative flex flex-col items-center max-w-4xl w-full text-center space-y-12 py-8">
+<!-- Hero Section -->
+<div class="space-y-8">
+<div class="mb-8 animate-bounce-gentle">
+<div class="relative">
+<div class="size-24 md:size-32 bg-accent-gold rounded-full flex items-center justify-center text-deep-blue shadow-[0_0_50px_rgba(255,215,0,0.3)]">
+<span class="material-symbols-outlined text-5xl md:text-6xl font-bold">person_search</span>
+</div>
+<div class="absolute -top-2 -right-2 size-8 bg-white rounded-lg flex items-center justify-center text-deep-blue rotate-12">
+<span class="material-symbols-outlined text-xl fill-1">star</span>
+</div>
+</div>
+</div>
+
+<h1 class="font-playful text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
+Mom is coming... <span class="text-accent-gold italic block mt-2">Hide!</span>
+</h1>
+<p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+A thrilling game where you must close computer windows before mom arrives at your door!
+</p>
+
+<!-- Play Button -->
+<a href="new01mama.html" class="inline-block group" aria-label="Play Mom is Coming game">
+<div class="bg-accent-gold text-deep-blue font-playful font-bold text-2xl md:text-3xl px-12 md:px-16 py-5 md:py-6 rounded-2xl shadow-[0_0_40px_rgba(255,215,0,0.4)] hover:shadow-[0_0_60px_rgba(255,215,0,0.6)] hover:scale-105 transition-all duration-300 animate-pulse-gold">
+<span class="material-symbols-outlined align-middle mr-3 text-3xl">play_arrow</span>
+PLAY NOW
+</div>
+<p class="text-accent-gold/70 text-sm mt-3">Click to start the adventure!</p>
+</a>
+</div>
+
+<!-- Game Description -->
+<div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm w-full text-left">
+<div class="flex items-start gap-6 mb-6">
+<div class="size-14 bg-accent-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-accent-gold text-2xl">info</span>
+</div>
+<div>
+<h2 class="text-2xl md:text-3xl font-bold text-white mb-4">About the Game</h2>
+<p class="text-white/80 text-lg leading-relaxed">
+<strong>"妈妈来了！快关电脑"</strong> is an exciting, fast-paced game where you play as a student secretly using the computer. Your mission is to close all open windows before your mom reaches your room. The tension rises as mom's progress bar fills up - you have only 10 seconds when she appears!
+</p>
+</div>
+</div>
+</div>
+
+<!-- Instructions & Controls -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+<!-- Instructions -->
+<div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm text-left">
+<div class="flex items-start gap-4 mb-6">
+<div class="size-12 bg-accent-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-accent-gold">school</span>
+</div>
+<h3 class="text-xl font-bold text-white">How to Play</h3>
+</div>
+<ul class="space-y-4 text-white/80">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-gold mt-1">check_circle</span>
+<span>Use <kbd class="bg-white/10 px-2 py-1 rounded border border-white/20 text-white">A</kbd> / <kbd class="bg-white/10 px-2 py-1 rounded border border-white/20 text-white">D</kbd> or arrow keys to move left/right</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-gold mt-1">check_circle</span>
+<span>Click the <span class="text-red-400 font-bold">×</span> button to close windows</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-gold mt-1">check_circle</span>
+<span>Close ALL windows before mom reaches 100% progress</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-gold mt-1">check_circle</span>
+<span>When mom appears, you have only 10 seconds!</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-gold mt-1">check_circle</span>
+<span>Each closed window gives 10 points, bonus for completing</span>
+</li>
+</ul>
+</div>
+
+<!-- Game Features -->
+<div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm text-left">
+<div class="flex items-start gap-4 mb-6">
+<div class="size-12 bg-accent-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-accent-gold">star</span>
+</div>
+<h3 class="text-xl font-bold text-white">Game Features</h3>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+<span class="material-symbols-outlined text-accent-gold">person</span>
+<span class="text-white/90">Animated player & mom characters</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+<span class="material-symbols-outlined text-accent-gold">window</span>
+<span class="text-white/90">Multiple window types (games, videos, chat, etc.)</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+<span class="material-symbols-outlined text-accent-gold">trending_up</span>
+<span class="text-white/90">Progress tracking & score system</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+<span class="material-symbols-outlined text-accent-gold">volume_up</span>
+<span class="text-white/90">Sound effects with toggle option</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+<span class="material-symbols-outlined text-accent-gold">phone_iphone</span>
+<span class="text-white/90">Responsive design for all devices</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white/5 rounded-xl">
+<span class="material-symbols-outlined text-accent-gold">military_tech</span>
+<span class="text-white/90">Increasing difficulty with levels</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Pro Tip -->
+<div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm w-full">
+<div class="flex items-start gap-6">
+<div class="size-14 bg-accent-gold/20 rounded-xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-accent-gold text-2xl">lightbulb</span>
+</div>
+<div class="text-left">
+<h3 class="text-xl font-bold text-accent-gold mb-3">Pro Tip</h3>
+<p class="text-white/80 text-lg leading-relaxed">
+Don't let her see your screen! In real life, use the <kbd class="bg-white/10 px-2 py-1 rounded border border-white/20 text-white">Alt+Tab</kbd> shortcut if you hear footsteps!
+But in this game, you need to actually close those windows before time runs out. Focus on windows closest to you first!
+</p>
+</div>
+</div>
+</div>
+
+<!-- Loading dots (kept for visual consistency) -->
+<div class="flex gap-2">
+<div class="size-2.5 rounded-full bg-accent-gold animate-pulse"></div>
+<div class="size-2.5 rounded-full bg-white/20 animate-pulse" style="animation-delay: 0.2s"></div>
+<div class="size-2.5 rounded-full bg-white/20 animate-pulse" style="animation-delay: 0.4s"></div>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="absolute bottom-8 flex items-center gap-3 opacity-70">
+<div class="size-10 bg-accent-gold rounded-full flex items-center justify-center text-deep-blue">
+<span class="material-symbols-outlined text-lg font-bold">sports_esports</span>
+</div>
+<div>
+<span class="font-black text-lg tracking-widest uppercase">BlackJay's Game Center</span>
+<p class="text-white/60 text-xs mt-1">Mom is Coming! - Close Computer Windows Game</p>
+</div>
+</div>
+</div>
+
+</body></html>
